@@ -16,6 +16,33 @@ body {
 
 h1 {
     color: var(--secondaryColor);
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /**Crear.php**/
+form {
+    background-color: var(--primaryColor);
+    padding: 50px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
