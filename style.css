@@ -4,6 +4,7 @@
     --primaryColor: #393E46;
     --secondaryColor: #00ADB5;
     --fontColor: #EEEEEE;
+    --labelColor: lightgray;
 }
 
 body {
@@ -39,6 +40,8 @@ input[type="text"],
 input[type="number"],
 input[type="file"],
 textarea {
+    resize: vertical; /* Allows the user to resize only vertically */
+    background-color: var(--labelColor);
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
