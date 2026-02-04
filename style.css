@@ -36,6 +36,10 @@ label {
     font-weight: bold;
 }
 
+label[for="pfp"] {
+    margin-top: 30px;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="file"],
@@ -48,4 +52,22 @@ textarea {
     border: none;
     border-radius: 8px;
     box-sizing: border-box;
+}
+
+input[type="file"] {
+    color: black;
+    width: 40%;
+}
+
+button[type="submit"] {
+    width: 30%;
+    padding: 15px;
+    background-color: var(--secondaryColor);
+    color: var(--fontColor);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
 }
