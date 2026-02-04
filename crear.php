@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Formulario</h1>
-    <form onsubmit="return validateLanguages()">
+    <form onsubmit="return validateLanguages()" action="guardar.php" method="POST" enctype="multipart/form-data">
         <!-- Labels -->
         <label for="name">Nombre</label>
         <input type="text" name="nombre" id="name" required>
@@ -33,7 +33,10 @@
         <textarea placeholder="Háblanos un poco de tí..." name="experiencia" id="experiencia" required></textarea>
 
         <label for="formacion">Formación académica</label>
-        <textarea placeholder="Háblanos sobre tuformación académica..." name="formacion" id="formacion" required></textarea>
+        <textarea placeholder="Háblanos sobre tu formación académica..." name="formacion" id="formacion" required></textarea>
+
+        <label for="habilidades">Habilidades</label>
+        <textarea placeholder="Háblanos sobre tus habilidades..." name="habilidades" id="habilidades" required></textarea>
 
         <label for="idiomas">Idiomas</label>
         <input type="checkbox" name="idiomasArray" value="english" id="english"> Inglés<br>
