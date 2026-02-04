@@ -6,6 +6,13 @@
     --fontColor: #EEEEEE;
     --labelColor: lightgray;
 }
+/* Google Fonts */
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -16,6 +23,8 @@ body {
 }
 
 h1 {
+    font-family: "Ranchers", sans-serif;
+    font-size: 70px;
     color: var(--secondaryColor);
     text-align: center;
     margin-bottom: 40px;
@@ -70,4 +79,10 @@ button[type="submit"] {
     font-size: 15px;
     display: block;
     margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #008B8F;
+    box-shadow: 0 0 10px rgba(0, 139, 143, 0.5);
+
 }
