@@ -39,17 +39,17 @@
         <textarea placeholder="Háblanos sobre tus habilidades..." name="habilidades" id="habilidades" required></textarea>
 
         <label for="idiomas">Idiomas</label>
-        <input type="checkbox" name="idiomasArray" value="inglés" id="ingles"> Inglés<br>
-        <input type="checkbox" name="idiomasArray" value="español" id="espanol"> Español<br>
-        <input type="checkbox" name="idiomasArray" value="francés" id="frances"> Francés<br>
-        <input type="checkbox" name="idiomasArray" value="alemán" id="aleman"> Alemán<br>
-        <input type="checkbox" name="idiomasArray" value="italiano" id="italiano"> Italiano<br>
-        <input type="checkbox" name="idiomasArray" value="portugués" id="portugues"> Portugués<br>
-        <input type="checkbox" name="idiomasArray" value="chino" id="chino"> Chino<br>
-        <input type="checkbox" name="idiomasArray" value="japonés" id="japones"> Japonés<br>
-        <input type="checkbox" name="idiomasArray" value="árabe" id="arabe"> Árabe<br>
-        <input type="checkbox" name="idiomasArray" value="ruso" id="ruso"> Ruso<br>
-        <input type="checkbox" name="idiomasArray" value="otro" id="otro"> Otro<br>
+        <input type="checkbox" name="idiomasArray[]" value="inglés" id="ingles"> Inglés<br>
+        <input type="checkbox" name="idiomasArray[]" value="español" id="espanol"> Español<br>
+        <input type="checkbox" name="idiomasArray[]" value="francés" id="frances"> Francés<br>
+        <input type="checkbox" name="idiomasArray[]" value="alemán" id="aleman"> Alemán<br>
+        <input type="checkbox" name="idiomasArray[]" value="italiano" id="italiano"> Italiano<br>
+        <input type="checkbox" name="idiomasArray[]" value="portugués" id="portugues"> Portugués<br>
+        <input type="checkbox" name="idiomasArray[]" value="chino" id="chino"> Chino<br>
+        <input type="checkbox" name="idiomasArray[]" value="japonés" id="japones"> Japonés<br>
+        <input type="checkbox" name="idiomasArray[]" value="árabe" id="arabe"> Árabe<br>
+        <input type="checkbox" name="idiomasArray[]" value="ruso" id="ruso"> Ruso<br>
+        <input type="checkbox" name="idiomasArray[]" value="otro" id="otro"> Otro<br>
 
         <label for="pfp">Adjunta tu foto de perfil</label>
         <input type="file" name="pfp" id="pfp">
@@ -58,7 +58,7 @@
     </form>
     <script>
         function validateLanguages() {
-            const checkboxes = document.querySelectorAll('input[name="idiomasArray"]:checked');
+            const checkboxes = document.querySelectorAll('input[name="idiomasArray[]"]:checked');
             if (checkboxes.length === 0) {
                 alert('Debes seleccionar al menos un idioma.');
                 return false;

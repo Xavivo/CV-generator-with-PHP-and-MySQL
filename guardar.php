@@ -29,10 +29,8 @@
         echo "Experiencia: " . htmlspecialchars($experiencia) . "<br>";
         echo "Formación académica: " . htmlspecialchars($formacion) . "<br>";
         echo "Habilidades: " . htmlspecialchars($habilidades) . "<br>";
-        echo "Idiomas seleccionados: ";
-        foreach ($idiomas as $idioma) {
-            echo htmlspecialchars($idioma) . ", ";
-        }
+        echo "Idiomas seleccionados: " . implode(", ", array_map('htmlspecialchars', $idiomas));
+        
         // Pfp upload
     ?>
 </body>
