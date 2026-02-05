@@ -30,6 +30,19 @@ h1 {
     margin-bottom: 40px;
 }
 
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.headerContainer img {
+    height: 80px;
+    width: auto;
+}
+
 /**Crear.php**/
 form {
     background-color: var(--primaryColor);
