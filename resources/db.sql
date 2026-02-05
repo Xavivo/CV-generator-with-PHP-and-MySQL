@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS generador_cv;
-USE generador_cv;
+CREATE DATABASE IF NOT EXISTS cvgeneratordb;
+USE cvgeneratordb;
 
 CREATE TABLE cvs (
     id INT AUTO_INCREMENT PRIMARY KEY,
